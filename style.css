@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100%;
+/*    background-color: lightpink; */
+    padding: 0;
+    margin: 0;
+/*     color: white; */
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  header {
+    background-color: #4a90e2;
+    padding: 2rem 0;
+    text-align: center;
+    color: #fff;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  header nav ul li {
+    display: inline;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .header .container img {
+    margin-top: 1.5rem;
+    width: 300px;                  
+    height: 400px;                 
+    object-fit: cover;             
+    overflow: hidden;  
+  }
+  
+  /* Section Styling */
+  .section {
+    padding: 3rem 0;
+  }
+  
+  .section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #4a90e2;
+    text-align: center;
+  }
+  
+  .section p, .section ul {
+    max-width: 800px;
+    margin: 1rem auto;
+    text-align: center;
+    color: #666;
+  }
+  
+  /* Projects & Extracurriculars Styling */
+  .project-list, .extracurricular-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  .project-item, .extracurricular-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-item h3, .extracurricular-item h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    text-align: center;
+  }
+  
+  .project-item p, .extracurricular-item p {
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+  
+  .project-item ul, .extracurricular-item ul {
+    list-style: disc;
+    padding-left: 1rem;
+    text-align: left;
+  }
+  
+  /* Contact Section */
+  .contact ul, .resume ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .contact ul li, .resume ul li {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+  }
+  
+  .contact a, .resume a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 2rem 0;
+    color: #fff;
+    background: #333;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header nav ul {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+  
+    .project-list, .extracurricular-list {
+      flex-direction: column;
+    }
+  
+    .project-item, .extracurricular-item {
+      width: 100%;
+    }
+  }
